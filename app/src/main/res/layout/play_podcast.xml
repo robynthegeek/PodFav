@@ -50,14 +50,14 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:gravity="center"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/play"
         app:layout_constraintVertical_bias="0.478"
-        tools:text="Stuff You Missed In History Class"
-        android:gravity="center"/>
+        tools:text="Stuff You Missed In History Class" />
     <!--All free use icons in this app made by CC 3.0 BY. from www.flaticon.com -->
     <ImageView
         android:id="@+id/play"

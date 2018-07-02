@@ -19,20 +19,22 @@ public class PodcastAdapter extends ArrayAdapter<Podcast> {
     private static final String LOG_TAG = PodcastAdapter.class.getSimpleName();
 
     /**
-     * custom constructor, inflates layout file and populates the list.
-     * @param context current context for layout file
+     * custom constructor, inflates layout file and populates the listView.
+     *
+     * @param context  current context for layout file
      * @param podcasts an ArrayList of podcasts to display in list on screen
      */
 
     public PodcastAdapter(Activity context, ArrayList<Podcast> podcasts) {
-        super(context, 0 , podcasts);
+        super(context, 0, podcasts);
     }
 
     /**
      * Makes a view for the AdapterView
+     *
      * @param position position in the Array that should be displayed in the list
-     * @param newView the view to populate
-     * @param parent the parent ViewGroup where the new view will be inflated
+     * @param newView  the view to populate
+     * @param parent   the parent ViewGroup where the new view will be inflated
      * @return the correct View for the position in the AdapterView
      */
     @NonNull
@@ -41,7 +43,7 @@ public class PodcastAdapter extends ArrayAdapter<Podcast> {
     public View getView(int position, @Nullable View newView, @NonNull ViewGroup parent) {
 
         View podcastItemView = newView;
-        if(podcastItemView == null) {
+        if (podcastItemView == null) {
             podcastItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.podcasts, parent, false);
         }

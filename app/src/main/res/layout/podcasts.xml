@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
-    android:gravity="center_vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
 
     <ImageView
         android:id="@+id/podcastImage"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@drawable/mih"
         android:layout_margin="8dp"
-        />
+        android:src="@drawable/mih" />
+
     <TextView
         android:id="@+id/podcastRanking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="1"
-        android:textSize="60sp"
         android:layout_margin="8dp"
-        />
+        android:textSize="60sp"
+        tools:text="1" />
+
     <TextView
         android:id="@+id/podcastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Stuff You Missed In History Class"
-        />
+        tools:text="Stuff You Missed In History Class" />
 
 </LinearLayout>

@@ -44,17 +44,15 @@ public class MainActivity extends AppCompatActivity {
         podcasts.add(new Podcast("Ted Radio Hour", 10, R.drawable.trh));
 
 
-
         final PodcastAdapter podcastAdapter =
                 new PodcastAdapter(this, podcasts);
 
-        /**
-         * link the adapter to the created listview
-         */
+//link the custom adapter to the created ListView
+
         final ListView listView = findViewById(R.id.listview_podcasts);
         listView.setAdapter(podcastAdapter);
 
-//Add an OnClickListener to the listview
+//Add an OnClickListener to the ListView. When Clicked, the intent transfers user to the PlayPodcast activity.
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -63,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent playPodcast = new Intent(getApplicationContext(), PodcastPlayer.class);
                 playPodcast.putExtra(KEY_PODCAST, currentPodcast.getPodcastName());
                 playPodcast.putExtra(KEY_RANKING, currentPodcast.getRanking());
-                playPodcast.putExtra(KEY_IMG, currentPodcast.getImageRid()+"");
+                playPodcast.putExtra(KEY_IMG, currentPodcast.getImageRid() + "");
                 startActivity(playPodcast);
 
             }

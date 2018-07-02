@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import java.util.ArrayList;
+
 
 /**
  * This app displays a list of podcasts and allows the user to click one to navigate to a Podcast Player activity.
@@ -14,9 +16,8 @@ import android.widget.ListView;
  * Icons: All Icons in the app were provided for free use by CC 3.0 BY. from www.flaticon.com
  * Reference and instructions for how to set an OnclickListener on a custom adapter from Lizzy.
  * Thanks Lizzy! https://github.com/dizzy-miss-lizzy/MusicPlayer
+ * Reference for custom adapter from https://github.com/udacity/ud839_Miwok
  */
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 

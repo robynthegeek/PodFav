@@ -6,12 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
 import java.util.ArrayList;
 
 
 /**
  * This app displays a list of podcasts and allows the user to click one to navigate to a Podcast Player activity.
- *
+ * <p>
  * Sources:
  * Icons: All Icons in the app were provided for free use by CC 3.0 BY. from www.flaticon.com
  * Reference and instructions for how to set an OnclickListener on a custom adapter from Lizzy.
@@ -48,13 +49,11 @@ public class MainActivity extends AppCompatActivity {
         final PodcastAdapter podcastAdapter =
                 new PodcastAdapter(this, podcasts);
 
-//link the custom adapter to the created ListView
-
+        //link the custom adapter to the created ListView
         final ListView listView = findViewById(R.id.listview_podcasts);
         listView.setAdapter(podcastAdapter);
 
-//Add an OnClickListener to the ListView. When Clicked, the intent transfers user to the PlayPodcast activity.
-
+        //Add an OnClickListener to the ListView. When Clicked, the intent transfers user to the PlayPodcast activity.
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

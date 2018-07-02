@@ -20,6 +20,7 @@ public class Podcast {
      * @param ranking integer indicating position in the ranking table
      * @param imageRid Drawable resource ID links to image from the podcast's free feed
      */
+
     public Podcast(String podcastName, int ranking, int imageRid){
         mPodcastName = podcastName;
         mRanking = ranking;
@@ -27,11 +28,11 @@ public class Podcast {
     }
 
     //get the name of the podcast.
-    public String getPodcastName() {return mPodcastName;}
+    public String getPodcastName() {return mPodcastName; }
 
     //get the ranking of the podcast
-    public int getRanking() {return mRanking;}
+    public String getRanking() {return Integer.toString(mRanking); }
 
     //get the id of the image resource
-    public int getmImageRid() {return mImageRid;}
+    public int getImageRid() {return mImageRid; }
 }
